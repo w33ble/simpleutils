@@ -1,5 +1,7 @@
 # simpleutils
 
+[![Build Status](https://travis-ci.org/w33ble/simpleutils.svg?branch=master)](https://travis-ci.org/w33ble/simpleutils)
+
 simple utilities, no dependencies
 
 ## Usage
