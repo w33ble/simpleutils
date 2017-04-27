@@ -1,0 +1,47 @@
+{
+  "name": "@w33bletools/simpleutils",
+  "version": "1.0.0",
+  "description": "simple utilities, no dependencies",
+  "main": "src/utils.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "test": "npm run lint && npm run test:only",
+    "test:only": "ava",
+    "test:dev": "ava --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w33ble/simpleutils.git"
+  },
+  "keywords": [
+    "utils",
+    "lodash"
+  ],
+  "author": "Joe Fleming (https://github.com/w33ble)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/w33ble/simpleutils/issues"
+  },
+  "homepage": "https://github.com/w33ble/simpleutils",
+  "engines" : {
+    "node" : ">=6.9.0"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "eslint": "~3.19.0",
+    "eslint-config-airbnb": "~14.1.0",
+    "eslint-plugin-import": "~2.2.0",
+    "eslint-plugin-jsx-a11y": "~4.0.0",
+    "eslint-plugin-react": "~6.10.3"
+  }
+}
