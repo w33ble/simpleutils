@@ -32,6 +32,9 @@
     ],
     "babel": "inherit"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
   },
   "devDependencies": {
