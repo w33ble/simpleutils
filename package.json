@@ -1,6 +1,6 @@
 {
   "name": "@w33bletools/simpleutils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple utilities, no dependencies",
   "main": "dist/utils.js",
   "scripts": {
