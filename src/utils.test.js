@@ -54,12 +54,12 @@ test('isFunction returns false for non-objects', (t) => {
   checkTypesFail(t, utils.isFunction, types.filter((_, i) => i !== 2));
 });
 
-test('isPlainObject returns true for object', (t) => {
-  t.true(utils.isPlainObject({}));
+test('isObjectLike returns true for object', (t) => {
+  t.true(utils.isObjectLike({}));
 });
 
-test('isPlainObject returns false for non-objects', (t) => {
-  checkTypesFail(t, utils.isPlainObject, types.filter((_, i) => i !== 0));
+test('isObjectLike returns false for non-objects', (t) => {
+  checkTypesFail(t, utils.isObjectLike, types.filter((_, i) => i !== 0));
 });
 
 test('isString returns true for string', (t) => {

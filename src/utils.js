@@ -2,7 +2,7 @@ export function isArray(arr) {
   return Array.isArray(arr);
 }
 
-export function isPlainObject(obj) {
+export function isObjectLike(obj) {
   return (obj != null && typeof obj === 'object' && !isArray(obj));
 }
 
@@ -23,7 +23,7 @@ export function identity(payload) {
 }
 
 export function pick(obj, fields) {
-  if (!isPlainObject(obj)) throw new Error('pick function expects an object');
+  if (!isObjectLike(obj)) throw new Error('pick function expects an object');
   const fieldList = (!isArray(fields)) ? [fields] : fields;
   return Object.keys(obj).reduce((acc, key) => {
     // filter out non-matching fields
@@ -33,7 +33,7 @@ export function pick(obj, fields) {
 }
 
 export function omit(obj, fields) {
-  if (!isPlainObject(obj)) throw new Error('omit function expects an object');
+  if (!isObjectLike(obj)) throw new Error('omit function expects an object');
   const fieldList = (!isArray(fields)) ? [fields] : fields;
   return Object.keys(obj).reduce((acc, key) => {
     // filter out matching fields
