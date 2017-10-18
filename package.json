@@ -8,7 +8,8 @@
     "test": "npm run lint && npm run test:only",
     "test:only": "ava",
     "test:dev": "ava --watch",
-    "build": "mkdirp dist && babel src/utils.js --out-file dist/utils.js"
+    "build": "mkdirp dist && babel src/utils.js --out-file dist/utils.js",
+    "version": "npm run build"
   },
   "repository": {
     "type": "git",
