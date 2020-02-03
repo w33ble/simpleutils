@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/w33ble/simpleutils",
   "engines": {
-    "node": ">=6.9.0"
+    "node": ">=10.15.1"
   },
   "ava": {
     "require": [
