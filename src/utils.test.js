@@ -104,14 +104,14 @@ test('pick throws when given a non-object', (t) => {
 
 test('returns all but single property', (t) => {
   // shallow clone
-  const comp = Object.assign({}, obj);
+  const comp = { ...obj };
   delete comp.one;
   t.deepEqual(utils.omit(obj, 'one'), comp);
 });
 
 test('returns all but multiple properties', (t) => {
   // shallow clone
-  const comp = Object.assign({}, obj);
+  const comp = { ...obj };
   delete comp.seven;
   delete comp.eight;
   t.deepEqual(utils.omit(obj, ['seven', 'eight']), comp);
